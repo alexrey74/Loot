@@ -1,6 +1,6 @@
 Hello
 
-dans le projet, je nai pas réussi le dark mode, le lien mot de passe oublié
+dans le projet, je nai pas réussi le dark mode, la récupération des spinner (liste déroulante), le lien mot de passe oublié
  et l'authentification google et facebook (j'ai enlever les images)
 
 pour le linear layout : liste des jeux voila le code a générer 
