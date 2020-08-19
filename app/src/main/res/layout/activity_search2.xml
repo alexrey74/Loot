@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Recherche de joueurs"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:paddingTop="10dp"
+                android:textSize="15dp"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/loot_clair"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+
+        <Spinner
+            android:id="@+id/spinner_liste_jeux"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@color/light_blue"
+            android:prompt="@string/jeux_type"
+            android:entries="@array/jeux_types"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_nb_joueurs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:background="@drawable/linear_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de joueurs \n recherchés"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/medium_blue"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <Button
+                    android:id="@+id/compteur_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="@color/medium_blue"
+                    android:background="@drawable/round_button"
+                    android:layout_gravity="center"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/compteur_recherches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/medium_blue"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <Button
+                    android:id="@+id/compteur_moins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_gravity="center"
+                    android:background="@drawable/round_button"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:background="@drawable/bordure_linear">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Esprit de jeu"
+                    android:gravity="center"
+                    android:textColor="@color/medium_blue"
+                    android:fontFamily="@font/lato"
+                    android:textSize="14dp"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"/>
+
+                <Button
+                    android:id="@+id/loisir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="loisir"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/loisir_or_competition"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+                <Button
+                    android:id="@+id/competition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="compétition"
+                    android:textColor="@color/medium_blue"
+                    android:layout_gravity="center"
+                    android:background="@drawable/specific_button"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="role"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColorHint="@color/medium_blue"
+            android:textColor="@color/medium_blue"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/rechercher_joueur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rechercher"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="112dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/light_blue">
+
+        <ImageView
+            android:id="@+id/search2_profil"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/personW"
+            />
+
+        <ImageView
+            android:id="@+id/search2_chat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/message"
+            />
+
+        <ImageView
+            android:id="@+id/search2_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/home_blue"/>
+
+        <ImageView
+            android:id="@+id/search2_shop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/money"
+            />
+
+        <ImageView
+            android:id="@+id/search2_settings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_settings_outline" />
+
+    </LinearLayout>
+
+</LinearLayout>

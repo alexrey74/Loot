@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/retour_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back_outline"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="info du jeu"
+            android:textAlignment="center"
+            android:textColor="@color/light_blue"
+            android:paddingTop="10dp"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/loot_clair"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:id="@+id/title_game_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="%d"
+            android:textColor="@color/medium_blue"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/grey"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+            <TextView
+                android:id="@+id/pseudo_games_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="%d"
+                android:textAlignment="center"
+                android:textColor="@color/medium_blue"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:id="@+id/level_games_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="%d"
+                android:textAlignment="center"
+                android:textColor="@color/medium_blue"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/brush_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:background="none"
+                android:src="@drawable/brush"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/info_games_joueur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rechercher des joueurs"
+                android:background="@color/light_blue"
+                android:textColor="@color/medium_blue"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/info_games_join"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="Rejoindre une équipe"
+                android:background="@color/locked_blue"
+                android:textColor="@color/medium_blue"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="2dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/locker"/>
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/info_games_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Créer une équipe"
+            android:background="@color/locked_blue"
+            android:textColor="@color/medium_blue"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="2dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@drawable/locker"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/light_blue">
+
+        <ImageView
+            android:id="@+id/games_info_profil"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/personW"
+            />
+
+        <ImageView
+            android:id="@+id/games_info_chat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/message"
+            />
+
+        <ImageView
+            android:id="@+id/games_info_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/home_blue"/>
+
+        <ImageView
+            android:id="@+id/games_info_shop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/money"
+            />
+
+        <ImageView
+            android:id="@+id/games_info_settings"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_settings_outline" />
+
+    </LinearLayout>
+
+</LinearLayout>

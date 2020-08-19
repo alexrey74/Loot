@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/loot_clair"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:fontFamily="@font/lato"
+        android:text="Continuer avec : " />
+
+    <EditText
+        android:id="@+id/name_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:fontFamily="@font/lato"
+        android:hint="Nom Prénom"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textColorHint="@color/medium_blue"/>
+
+    <EditText
+        android:id="@+id/pseudo_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:fontFamily="@font/lato"
+        android:hint="Pseudo"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textColorHint="@color/medium_blue"/>
+
+
+    <EditText
+        android:id="@+id/tel_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:fontFamily="@font/lato"
+        android:hint="Numéro tel"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textColorHint="@color/medium_blue"/>
+
+
+    <EditText
+        android:id="@+id/mail_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:fontFamily="@font/lato"
+        android:hint="Email"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textColorHint="@color/medium_blue"/>
+
+
+    <EditText
+        android:id="@+id/langue_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:fontFamily="@font/lato"
+        android:hint="Langue(s)"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textColorHint="@color/medium_blue"/>
+
+
+    <EditText
+        android:id="@+id/pwd_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:fontFamily="@font/lato"
+        android:hint="Mot de passe"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/medium_blue"/>
+
+
+    <Button
+        android:id="@+id/validation_inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway"
+        android:text="Inscription"
+        android:background="@drawable/gradient"
+        android:textColor="@color/white"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+
+
+</LinearLayout>

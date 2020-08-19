@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_blue">#3cbff0</color>
+    <color name="medium_blue">#184078</color>
+    <color name="purple">#6a27b7</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_blue">#0e121f</color>
+    <color name="grey">#F2F2F2</color>
+    <color name="locked_blue">#9DDFF7</color>
+
+</resources>

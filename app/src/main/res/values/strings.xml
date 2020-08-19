@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">loot</string>
+    <string name="aucun_joueur">Nous vous proposons de changer un critère de recherche.</string>
+    <string name="proposition_joueur">Sinon voici des parties ou des joueurs pour un jeu présent dans votre bibliothèque.</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="joueurs_dispo">Joueurs disponibles</string>
+    <string name="jeux_type">Jeu multijoueurs</string>
+    <string-array name="jeux_types">
+        <item>Jeu multijoueurs</item>
+        <item>1 vs 1</item>
+    </string-array>
+
+</resources>
