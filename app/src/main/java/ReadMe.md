@@ -3,64 +3,6 @@ Hello
 dans le projet, je nai pas réussi le dark mode, la récupération des spinner (liste déroulante), le lien mot de passe oublié
  et l'authentification google et facebook (j'ai enlever les images)
 
-pour le linear layout : liste des jeux voila le code a générer 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/games_list"
-            android:layout_marginTop="25dp"
-            >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="3">
-
-                <TextView
-                    android:id="@+id/game_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="%d"/>
-
-                <TextView
-                    android:id="@+id/pseudo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="%d"/>
-
-                <TextView
-                    android:id="@+id/level"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="%d"/>
-                    
-            </LinearLayout>
-
-            <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    android:text="X"
-                    android:textSize="30dp"
-                    android:textColor="@color/medium_blue"
-                    android:textAlignment="center"/>
-
-        </LinearLayout>
-        
-        <Space
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-
-
-pour l'info du jeu (a voir dpour changer les %d pour les données)
-
 pour la connexion google et facebook : page inscription et connexion
 
     <LinearLayout
@@ -98,4 +40,50 @@ pour la connexion google et facebook : page inscription et connexion
         android:layout_marginBottom="50px"
         android:fontFamily="@font/lato"
         android:text=" ou " />
+        
+pour la liste des joueurs (résultat) :
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/games_list"
+            android:layout_marginTop="25dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/reesult_pseudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="%d"/>
+
+                <TextView
+                    android:id="@+id/result_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="%d"/>
+                    
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_game_controller_outline_footer"/>
+
+        </LinearLayout>
+        
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
 
